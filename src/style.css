@@ -1,14 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  /* html {
-    font-family: "Lato", sans-serif;
-  } */
-
   .fade-transition {
     opacity: 1;
     animation: fade 0.5s linear;
@@ -24,5 +18,311 @@
     100% {
       opacity: 1;
     }
+  }
+
+  /* #app {
+    margin: 0 auto;
+    -webkit-animation: colorAberration 2.4s infinite;
+    animation: colorAberration 2.4s infinite;
+    text-shadow: 2px 0 1px rgba(30, 0, 255, 0.5),
+      -2px 0 1px rgba(0, 255, 30, 0.3), 0 0 3px;
+  }
+
+  @-webkit-keyframes colorAberration {
+    0% {
+      text-shadow: 0.5px 0 1px rgba(17, 17, 17, 0.5),
+        -0.5px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    10% {
+      text-shadow: 2.7px 0 1px rgba(17, 17, 17, 0.5),
+        -2.7px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    20% {
+      text-shadow: 0.02px 0 1px rgba(17, 17, 17, 0.5),
+        -0.02px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    30% {
+      text-shadow: 0.4px 0 1px rgba(17, 17, 17, 0.5),
+        -0.4px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    40% {
+      text-shadow: 3.4px 0 1px rgba(17, 17, 17, 0.5),
+        -3.4px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    50% {
+      text-shadow: 1.6px 0 1px rgba(17, 17, 17, 0.5),
+        -1.6px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    60% {
+      text-shadow: 0.7px 0 1px rgba(17, 17, 17, 0.5),
+        -0.7px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    70% {
+      text-shadow: 3.8px 0 1px rgba(17, 17, 17, 0.5),
+        -3.8px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    80% {
+      text-shadow: 1.8px 0 1px rgba(17, 17, 17, 0.5),
+        -1.8px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    90% {
+      text-shadow: 2.3px 0 1px rgba(17, 17, 17, 0.5),
+        -2.3px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    to {
+      text-shadow: 2.6px 0 1px rgba(17, 17, 17, 0.5),
+        -2.6px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+  }
+  @keyframes colorAberration {
+    0% {
+      text-shadow: 0.5px 0 1px rgba(17, 17, 17, 0.5),
+        -0.5px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    10% {
+      text-shadow: 2.7px 0 1px rgba(17, 17, 17, 0.5),
+        -2.7px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    20% {
+      text-shadow: 0.02px 0 1px rgba(17, 17, 17, 0.5),
+        -0.02px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    30% {
+      text-shadow: 0.4px 0 1px rgba(17, 17, 17, 0.5),
+        -0.4px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    40% {
+      text-shadow: 3.4px 0 1px rgba(17, 17, 17, 0.5),
+        -3.4px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    50% {
+      text-shadow: 1.6px 0 1px rgba(17, 17, 17, 0.5),
+        -1.6px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    60% {
+      text-shadow: 0.7px 0 1px rgba(17, 17, 17, 0.5),
+        -0.7px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    70% {
+      text-shadow: 3.8px 0 1px rgba(17, 17, 17, 0.5),
+        -3.8px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    80% {
+      text-shadow: 1.8px 0 1px rgba(17, 17, 17, 0.5),
+        -1.8px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    90% {
+      text-shadow: 2.3px 0 1px rgba(17, 17, 17, 0.5),
+        -2.3px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+    to {
+      text-shadow: 2.6px 0 1px rgba(17, 17, 17, 0.5),
+        -2.6px 0 1px rgba(238, 238, 238, 0.3), 0 0 3px;
+    }
+  }
+
+  #app:before {
+    content: "";
+    display: block;
+    pointer-events: none;
+    position: fixed;
+    z-index: 9;
+    inset: 0;
+    background: linear-gradient(hsla(0, 6%, 7%, 0) 75%, rgba(0, 0, 0, 0.25) 0),
+      linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.05),
+        rgba(0, 255, 0, 0.05),
+        rgba(0, 0, 255, 0.05)
+      );
+    background-size: 100% 3px, 4.5px 100%;
+  } */
+  @keyframes flicker {
+    0% {
+      opacity: 0.25;
+    }
+    5% {
+      opacity: 0.35;
+    }
+    10% {
+      opacity: 0.2;
+    }
+    15% {
+      opacity: 0.9;
+    }
+    20% {
+      opacity: 0.15;
+    }
+    25% {
+      opacity: 0.8;
+    }
+    30% {
+      opacity: 0.65;
+    }
+    35% {
+      opacity: 0.6;
+    }
+    40% {
+      opacity: 0.25;
+    }
+    45% {
+      opacity: 0.85;
+    }
+    50% {
+      opacity: 0.95;
+    }
+    55% {
+      opacity: 0.05;
+    }
+    60% {
+      opacity: 0.2;
+    }
+    65% {
+      opacity: 0.7;
+    }
+    70% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.35;
+    }
+    80% {
+      opacity: 0.7;
+    }
+    85% {
+      opacity: 0.75;
+    }
+    90% {
+      opacity: 0.7;
+    }
+    95% {
+      opacity: 0.35;
+    }
+    to {
+      opacity: 0.25;
+    }
+  }
+  @keyframes textShadow {
+    0% {
+      text-shadow: 0.4px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    5% {
+      text-shadow: 2.7px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    10% {
+      text-shadow: 0.02px 0 1px rgba(0, 30, 255, 0.5),
+        -0.02px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    15% {
+      text-shadow: 0.4px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    20% {
+      text-shadow: 3.4px 0 1px rgba(0, 30, 255, 0.5),
+        -3.4px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    25% {
+      text-shadow: 1.6px 0 1px rgba(0, 30, 255, 0.5),
+        -1.6px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    30% {
+      text-shadow: 0.7px 0 1px rgba(0, 30, 255, 0.5),
+        -0.7px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    35% {
+      text-shadow: 3.8px 0 1px rgba(0, 30, 255, 0.5),
+        -3.8px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    40% {
+      text-shadow: 3.8px 0 1px rgba(0, 30, 255, 0.5),
+        -3.8px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    45% {
+      text-shadow: 2.2px 0 1px rgba(0, 30, 255, 0.5),
+        -2.2px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    50% {
+      text-shadow: 0.08px 0 1px rgba(0, 30, 255, 0.5),
+        -0.084px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    55% {
+      text-shadow: 2.3px 0 1px rgba(0, 30, 255, 0.5),
+        -2.3px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    60% {
+      text-shadow: 2.2px 0 1px rgba(0, 30, 255, 0.5),
+        -2.2px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    65% {
+      text-shadow: 2.8px 0 1px rgba(0, 30, 255, 0.5),
+        -2.8px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    70% {
+      text-shadow: 0.4px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    75% {
+      text-shadow: 1.8px 0 1px rgba(0, 30, 255, 0.5),
+        -1.8px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    80% {
+      text-shadow: 0.08px 0 1px rgba(0, 30, 255, 0.5),
+        -0.08px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    85% {
+      text-shadow: 0.09px 0 1px rgba(0, 30, 255, 0.5),
+        -0.09px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    90% {
+      text-shadow: 3.4px 0 1px rgba(0, 30, 255, 0.5),
+        -3.4px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    95% {
+      text-shadow: 2.1px 0 1px rgba(0, 30, 255, 0.5),
+        -2.1px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    to {
+      text-shadow: 2.6px 0 1px rgba(0, 30, 255, 0.5),
+        -2.6px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+  }
+
+  #app::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(18, 16, 16, 0.1);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    animation: flicker 0.15s infinite;
+  }
+
+  #app::before {
+    content: "";
+    display: block;
+    pointer-events: none;
+    position: fixed;
+    z-index: 9;
+    inset: 0;
+    background: linear-gradient(hsla(0, 6%, 7%, 0) 75%, rgba(0, 0, 0, 0.25) 0),
+      linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.05),
+        rgba(0, 255, 0, 0.05),
+        rgba(0, 0, 255, 0.05)
+      );
+    background-size: 100% 3px, 4.5px 100%;
+  }
+
+  #app {
+    margin: 0 auto;
+    animation: textShadow 1.6s infinite;
   }
 }
