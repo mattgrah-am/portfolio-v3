@@ -1,6 +1,10 @@
 <template>
   <nav class="my-4 flex items-center justify-between md:my-8">
-    <h1 class="text-4xl font-bold">mg.</h1>
+    <h1
+      class="trans text-4xl font-bold transition duration-500 hover:blur-[2px]"
+    >
+      <NuxtLink to="/">mg.</NuxtLink>
+    </h1>
     <div>
       <ul class="flex gap-4 lg:gap-8">
         <li v-for="links in navLinks">

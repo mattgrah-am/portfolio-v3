@@ -11,7 +11,7 @@
         class="relative flex items-center rounded-md bg-gradient-to-r from-rose-600 to-purple-600 p-[2px] leading-none"
       >
         <span
-          class="block rounded-md bg-black px-4 py-3 transition duration-1000 group-hover:bg-neutral-900 group-hover:duration-200"
+          class="block rounded-md bg-black px-4 py-3 transition duration-1000 group-hover:blur-[1px] group-hover:duration-200"
         >
           <slot />
         </span>
