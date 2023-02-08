@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply mx-auto max-w-screen-lg bg-black px-4 text-neutral-100 lg:px-0;
+  font-family: "Lato", sans-serif;
+}
