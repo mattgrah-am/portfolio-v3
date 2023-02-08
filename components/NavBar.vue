@@ -1,7 +1,7 @@
 <template>
   <nav class="my-4 flex items-center justify-between md:my-8">
     <h1
-      class="trans text-4xl font-bold transition duration-500 hover:blur-[2px]"
+      class="text-2xl font-bold transition duration-500 hover:blur-[2px] md:text-4xl"
     >
       <NuxtLink to="/">mg.</NuxtLink>
     </h1>
@@ -12,7 +12,7 @@
         </li>
       </ul>
     </div>
-    <div>socials</div>
+    <div class="flex gap-4"><IconTwitter /><IconGithub /></div>
   </nav>
 </template>
 

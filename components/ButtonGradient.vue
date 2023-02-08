@@ -2,7 +2,7 @@
   <div class="grid justify-center">
     <div class="group relative">
       <div
-        class="animate-tilt absolute -inset-1 rounded-md bg-gradient-to-r from-rose-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"
+        class="absolute -inset-1 rounded-md bg-gradient-to-r from-rose-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"
       ></div>
       <component
         :is="element"
