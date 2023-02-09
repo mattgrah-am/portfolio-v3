@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center gap-8">
     <ButtonGradient>LEARN MORE</ButtonGradient>
-    <a href="#">Link to -></a>
+    <IconLink url="google.com" />
   </div>
 </template>
 

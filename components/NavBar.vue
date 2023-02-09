@@ -8,11 +8,17 @@
     <div>
       <ul class="flex gap-4 lg:gap-8">
         <li v-for="links in navLinks">
-          <NuxtLink :to="links.link">{{ links.name }}</NuxtLink>
+          <NuxtLink
+            class="transition duration-500 hover:blur-[2px]"
+            :to="links.link"
+            >{{ links.name }}</NuxtLink
+          >
         </li>
       </ul>
     </div>
-    <div class="flex gap-4"><IconTwitter /><IconGithub /></div>
+    <div class="flex gap-2">
+      <IconTwitter /><IconGithub /><IconLinkedin /><IconMail />
+    </div>
   </nav>
 </template>
 
