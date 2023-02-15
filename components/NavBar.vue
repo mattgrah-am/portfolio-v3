@@ -6,13 +6,22 @@
       <NuxtLink to="/">mg.</NuxtLink>
     </h1>
     <div>
-      <ul class="flex gap-4 lg:gap-8">
+      <ul class="flex gap-4">
         <li v-for="links in navLinks">
-          <NuxtLink :to="links.link">{{ links.name }}</NuxtLink>
+          <ButtonSolid>
+            <NuxtLink
+              class="rounded px-4 py-2 text-sm font-medium transition duration-500 hover:blur-[2px] focus:bg-neutral-900 lg:text-base"
+              :to="links.link"
+            >
+              {{ links.name }}
+            </NuxtLink>
+          </ButtonSolid>
         </li>
       </ul>
     </div>
-    <div class="flex gap-4"><IconTwitter /><IconGithub /></div>
+    <div class="flex gap-2">
+      <IconTwitter /><IconGithub /><IconLinkedin /><IconMail />
+    </div>
   </nav>
 </template>
 
