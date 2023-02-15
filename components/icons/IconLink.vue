@@ -1,31 +1,23 @@
 <template>
-  <a :href="url" target="_blank" rel="noopener noreferrer">
-    <svg
+  <svg
+    viewBox="0 0 24 24"
+    stroke-width="2"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-5 w-5 stroke-neutral-100 stroke-2 font-bold transition duration-200 hover:blur-[1px]"
+  >
+    <path
+      d="M21 3h-6m6 0l-9 9m9-9v6"
+      stroke="#f5f5f5"
       stroke-width="2"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-5 w-5 stroke-neutral-100 stroke-2 font-bold transition duration-200 hover:blur-[1px]"
-    >
-      <path
-        d="M14 11.998C14 9.506 11.683 7 8.857 7H7.143C4.303 7 2 9.238 2 11.998c0 2.378 1.71 4.368 4 4.873a5.3 5.3 0 001.143.124"
-        stroke="#f5f5f5"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      ></path>
-      <path
-        d="M10 11.998c0 2.491 2.317 4.997 5.143 4.997h1.714c2.84 0 5.143-2.237 5.143-4.997 0-2.379-1.71-4.37-4-4.874A5.304 5.304 0 0016.857 7"
-        stroke="#f5f5f5"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      ></path>
-    </svg>
-  </a>
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    ></path>
+    <path
+      d="M21 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h6"
+      stroke="#f5f5f5"
+      stroke-width="2"
+      stroke-linecap="round"
+    ></path>
+  </svg>
 </template>
-
-<script setup lang="ts">
-const props = defineProps<{
-  url: string;
-}>();
-</script>
