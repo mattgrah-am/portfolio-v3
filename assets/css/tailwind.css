@@ -3,6 +3,31 @@
 @tailwind utilities;
 
 body {
-  @apply mx-auto max-w-screen-lg bg-black px-4 text-neutral-100 lg:px-0;
+  @apply mx-auto max-w-screen-md bg-black px-4 text-neutral-100 lg:px-0;
   font-family: "Lato", sans-serif;
+}
+
+h1 {
+  @apply pb-6 text-3xl font-bold lg:text-5xl;
+}
+
+h2 {
+  @apply pb-4 text-2xl font-medium lg:text-3xl;
+}
+
+h3 {
+  @apply pb-4 text-xl font-bold lg:text-2xl;
+}
+
+p {
+  @apply pb-4 text-lg font-normal;
+}
+
+blockquote {
+  @apply mb-4 border-l-2 border-neutral-700 py-2 pl-4 text-xl font-light italic;
+}
+
+.router-link-active,
+.router-link-exact-active {
+  @apply bg-neutral-900;
 }
