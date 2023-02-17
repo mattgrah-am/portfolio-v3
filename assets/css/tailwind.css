@@ -20,14 +20,29 @@ h3 {
 }
 
 p {
-  @apply pb-4 text-lg font-normal;
+  @apply pb-4 text-lg font-normal leading-relaxed tracking-wider;
 }
 
 blockquote {
-  @apply mb-4 border-l-2 border-neutral-700 py-2 pl-4 text-xl font-light italic;
+  @apply mb-4 border-l-4 border-neutral-600 py-2 pl-4 text-xl italic leading-relaxed tracking-wider text-neutral-400;
+}
+
+a:link,
+a:visited {
+  @apply underline decoration-2;
+}
+
+a:hover,
+a:active {
+  @apply hover:no-underline;
 }
 
 .router-link-active,
 .router-link-exact-active {
   @apply bg-neutral-900;
+}
+
+.font-bebas_neue {
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
 }

@@ -1,15 +1,15 @@
 <template>
-  <nav class="my-4 flex items-center justify-between md:my-8">
-    <h1
-      class="text-2xl font-bold transition duration-500 hover:blur-[2px] md:text-4xl"
+  <nav class="my-8 flex items-center justify-between">
+    <a
+      class="text-2xl font-bold !no-underline transition duration-500 hover:blur-[2px] md:text-4xl"
+      href="/"
+      >mg.</a
     >
-      <a href="/">mg.</a>
-    </h1>
     <div>
-      <ul class="flex gap-4 lg:gap-8">
+      <ul class="flex gap-2 md:gap-4">
         <li v-for="links in navLinks">
           <NuxtLink
-            class="rounded px-4 py-2 text-sm font-medium transition duration-500 hover:blur-[2px] focus:bg-neutral-900 lg:text-base"
+            class="rounded px-4 py-2 text-sm font-medium !no-underline transition duration-500 hover:blur-[2px] focus:bg-neutral-900 lg:text-base"
             :to="links.link"
           >
             {{ links.name }}
@@ -17,7 +17,7 @@
         </li>
       </ul>
     </div>
-    <div class="flex gap-2">
+    <div class="hidden gap-2 sm:flex">
       <IconTwitter /><IconGithub /><IconLinkedin /><IconMail />
     </div>
   </nav>
