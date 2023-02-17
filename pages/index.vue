@@ -1,8 +1,5 @@
 <template>
-  <div class="flex items-center gap-8">
-    <ButtonGradient>LEARN MORE</ButtonGradient>
-    <IconLink /><IconChain />
-  </div>
+  <TheHero />
 </template>
 
 <script setup lang="ts"></script>
