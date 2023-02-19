@@ -18,7 +18,7 @@
         </div>
         <div class="mb-4 flex gap-4">
           <ButtonSolid
-            :href="portfolio.link"
+            :link="portfolio.link"
             target="_blank"
             class="flex gap-2 py-2 px-3 !no-underline"
             >LIVE <IconLink />

@@ -46,3 +46,20 @@ a:active {
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
 }
+
+.fade-transition {
+  opacity: 1;
+  animation: fade 0.5s linear;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
