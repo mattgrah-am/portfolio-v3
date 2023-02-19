@@ -8,10 +8,11 @@
         :is="element"
         :href="link"
         :target="target"
-        class="relative flex items-center rounded-md bg-gradient-to-r from-rose-600 to-purple-600 p-[2px] leading-none"
+        rel="noopener noreferrer"
+        class="relative flex items-center rounded-md bg-gradient-to-r from-rose-600 to-purple-600 p-[2px] leading-none !no-underline"
       >
         <span
-          class="block rounded-md bg-black px-4 py-3 transition duration-500 group-hover:blur-[1px] group-hover:duration-500"
+          class="flex items-center justify-center gap-2 rounded-md bg-black px-4 py-3 transition duration-500 group-hover:blur-[1px] group-hover:duration-500"
         >
           <slot />
         </span>
