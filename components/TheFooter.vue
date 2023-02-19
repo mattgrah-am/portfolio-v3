@@ -11,7 +11,7 @@
       />
       <a
         href="#top"
-        class="flex gap-2 text-sm font-medium !no-underline transition duration-500 hover:border-neutral-100 hover:blur-[2px] focus:bg-neutral-900 lg:text-base"
+        class="flex gap-2 text-sm font-medium !no-underline transition duration-500 hover:blur-[2px] lg:text-base"
         >Back to top <IconBackToTop
       /></a>
     </section>
