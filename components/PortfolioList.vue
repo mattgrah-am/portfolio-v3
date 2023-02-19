@@ -6,14 +6,14 @@
     <div class="flex flex-wrap justify-around md:justify-between">
       <div v-for="portfolio in portfolios">
         <div
-          class="mb-4 flex flex-col items-center rounded border border-neutral-700 bg-neutral-800 p-2"
+          class="mb-4 flex flex-col rounded border border-neutral-700 bg-neutral-800 p-2"
         >
-          <h3 class="pb-2">{{ portfolio.title }}</h3>
           <img
             :src="portfolio.image"
             :alt="portfolio.alt"
             class="mb-2 rounded border border-neutral-700"
           />
+          <h3 class="pb-2">{{ portfolio.title }}</h3>
           <p class="pb-0 text-xs">{{ portfolio.date }}</p>
         </div>
         <div class="mb-4 flex gap-4">
