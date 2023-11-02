@@ -6,13 +6,11 @@
     <div class="flex flex-wrap justify-around md:justify-between">
       <div v-for="portfolio in portfolios">
         <div
-          class="mb-4 flex flex-col rounded border border-neutral-700 bg-neutral-800 p-2"
-        >
+          class="mb-4 flex flex-col rounded border border-neutral-700 bg-neutral-800 p-2">
           <img
             :src="portfolio.image"
             :alt="portfolio.alt"
-            class="mb-2 rounded border border-neutral-700"
-          />
+            class="mb-2 rounded border border-neutral-700" />
           <h3 class="pb-2">{{ portfolio.title }}</h3>
           <p class="pb-0 text-xs">{{ portfolio.date }}</p>
         </div>
@@ -20,13 +18,13 @@
           <ButtonSolid
             :link="portfolio.link"
             target="_blank"
-            class="flex gap-2 py-2 px-3 !no-underline"
+            class="flex gap-2 px-3 py-2 !no-underline"
             >LIVE <IconLink />
           </ButtonSolid>
           <ButtonSolid
             :link="portfolio.github"
             target="_blank"
-            class="flex gap-2 py-2 px-3 !no-underline"
+            class="flex gap-2 px-3 py-2 !no-underline"
             >GITHUB <IconGithub />
           </ButtonSolid>
         </div>
@@ -36,7 +34,16 @@
 </template>
 
 <script setup lang="ts">
-const portfolios = reactive([
+const portfolios = reactive<
+  {
+    title: string;
+    date: string;
+    link: string;
+    github: string;
+    image: string;
+    alt: string;
+  }[]
+>([
   {
     title: "Version 1",
     date: "March 2021",
