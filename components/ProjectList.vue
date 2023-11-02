@@ -48,11 +48,11 @@ const projects = reactive<
     desc: "A basic macro calculator to help identify your calories, as well as your protein, fats, and carbohydrates required to maintain, lose weight or build muscle.",
   },
   {
-    title: "I know that song!",
-    github: "https://github.com/mattgrah-am/iknowthatsong-vue",
-    link: "https://iknowthatsong.mattgrah.am",
+    title: "Guess that tune!",
+    github: "https://github.com/mattgrah-am/guessThatTune",
+    link: "https://www.guessthattune.com/",
     alt: "A Screenshot of I know that song app",
-    image: "/img/iknowthatsong-600x300.webp",
+    image: "/img/guessthattune-600x300.webp",
     desc: "A simple web app that allows the end user to search for an artist or band, which in turn generates a set of multiple choice questions where the end user is to guess the song whilst a short 30sec music clip is played. If the user guesses correctly the name of the song is highlighted green, if the user selects incorrectly the name of the selected guess is highlighted red. At the end the web app will tell the end user how they did.",
   },
   {
